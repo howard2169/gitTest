@@ -12,6 +12,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('clean', function() {
     return gulp.src(['app/build/scripts/*'])
+        .pipe(uglify())
         .pipe(clean());
 });
 
