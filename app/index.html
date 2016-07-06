@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        123
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700italic,700,400' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="/howard/web-angular/bower_components/pure/pure.css">
+    <link rel="stylesheet" href="/howard/web-angular/bower_components/pure/grids-responsive.css">
+    -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="../app/build/css/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="webApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="header" id="main_header">
+        <!-- banner -->
+        <div class="header-banner"></div>
+        <h3 class="hidden-xs">HELLO WORLD</h3>
+        <div class="nav-center">
+            <!--nar bar-->
+            <nav class="navbar  navbar-default navbar-fixed-top header-nav" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header ">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand visible-xs-inline-block" href="#">Brand</a>
+                    </div>
+
+                    <!-- collapse -->
+                    <!-- desktop nav view-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item"><a href="#about" class="nav-link btn-lg scroll">About us</a></li>
+                            <li class="nav-item"><a href="#service" class="nav-link btn-lg scroll">Service</a></li>
+                            <li class="nav-item"><a href="#gallery" class="nav-link btn-lg scroll">Gallery</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link btn-lg scroll">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- desktop nav view -->
+                </div>
+            </nav>
+            <!--end narbar-->
+        </div>
+    </div>
+    <div class="container">
+        <!-- content -->
+        <div ui-view></div>
+        <!-- footer -->
+        <div class="footer" id="footer">
+        </div>
+    </div>
+    <a href="#main_header" class="scroll"><span class="scrollTop"></span></a>
+    <!-- build:js(.) scripts/vendor.js -->
+    <script src="../app/build/scripts/vendor.js"></script>
+    <!-- bower:js -->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) /scripts/scripts.js -->
+    <script src="../app/scripts/app.js"></script>
+    <script src="../app/build/scripts/builds.js"></script>
+
+    <!-- endbuild -->
+</body>
+
+</html>

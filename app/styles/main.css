@@ -1,0 +1,166 @@
+/* Space out content a bit */
+
+body {
+    /*   padding-top: 20px; */
+    padding-bottom: 20px;
+}
+
+.appname {
+    float: right;
+    padding-top: 50px;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Custom page header */
+
+.header {
+    /* border-bottom: 1px solid #e5e5e5; */
+    text-align: center;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+
+.header  h3 {
+    margin-top: 0px;
+    margin-bottom: 0;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 6em;
+    color: #fff;
+    letter-spacing: 5px;
+    position: relative;
+    bottom: 300px;
+    font-style: italic;
+}
+
+
+/* Custom page footer */
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* Custom section */
+
+.about,
+.service,
+.gallery,
+.contact {
+    padding-top: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-banner {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 600px;
+    filter: blur(2px);
+}
+
+
+/* Custom navbar */
+
+.header-nav {
+    background-color: rgba(59, 149, 199, .9);
+}
+
+.nav-center {
+    text-align: center;
+}
+
+.nav-center ul.nav {
+    display: inline-block;
+}
+
+.nav-link {
+    color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+
+/* Customize container */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+/* Customize banner */
+@media (max-width: 768px) {
+    .header-banner {
+          height: 200px;
+    }
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+.scrollTop {
+    background-image: url('../images/move-up.png');
+    background-repeat: no-repeat;
+    bottom: 3%;
+    right: 3%;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    background-size: 32px 32px;
+}
+
